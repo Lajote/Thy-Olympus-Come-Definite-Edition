@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     private bool movingRight;
 
     private Rigidbody2D RB;
-    private Animator animator;
+    public Animator animator;
 
     public SpriteRenderer SR;
 
@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        
         leftPoint.parent = null;
         rightPoint.parent = null;
 

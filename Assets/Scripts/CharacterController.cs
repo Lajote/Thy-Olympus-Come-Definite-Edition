@@ -16,7 +16,7 @@ public class CharacterController : MonoBehaviour
 	//[Range()] muestra una barra para editar en unity dentro de un rango establecido.
 	//[Space] salta un espacio, ayuda a mantener organizado el inspector de unity.
 	[Header("Movimiento")]
-	[SerializeField] private float m_JumpForce = 400f;							
+	[SerializeField] public float m_JumpForce = 400f;							
 	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	
 	[SerializeField] private bool m_AirControl = false;

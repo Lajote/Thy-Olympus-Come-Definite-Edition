@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy_Idle
+  m_Name: ChaosAnimation
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 664eb1fa6b0fe394db07ccb2da0a681a, type: 3}
-    - time: 0.1
-      value: {fileID: 21300000, guid: 6d4c841c938f5a843bc07f5cf8b2577f, type: 3}
     - time: 0.2
+      value: {fileID: 21300000, guid: 6d4c841c938f5a843bc07f5cf8b2577f, type: 3}
+    - time: 0.4
       value: {fileID: 21300000, guid: 3d9edec875f1a6a42bdbb38a7bfee840, type: 3}
     attribute: m_Sprite
     path: 
@@ -52,7 +52,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
