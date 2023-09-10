@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="height: 558px; width: 712px; position: absolute; top: 508px; left: 572px;">
+        <ui:VisualElement name="Container" style="justify-content: center; align-items: center; padding-left: 15%; padding-right: 15%; background-color: rgb(0, 0, 0); height: 155px; width: 528px; flex-direction: row; position: absolute; top: 221px; left: 100px;">
+            <ui:Button text="Scenes" display-tooltip-when-elided="true" name="ButtonScenes" class="button" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" class="button" />
+            <ui:Button text="Exit" display-tooltip-when-elided="true" name="ButtonExit" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
