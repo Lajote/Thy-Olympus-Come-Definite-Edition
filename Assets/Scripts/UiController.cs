@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UiController : MonoBehaviour
 {
@@ -71,6 +72,31 @@ public class UiController : MonoBehaviour
     public void UpdateGemCount()
     {
         GemText.text = CharacterController.instance.collected.ToString();
+    }
+
+    public void PauseButtonClicked()
+    {
+        GameManager.instance.gameState = GameManager.GameState.Pause;
+    }
+
+    public void MenuButtonClicked()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void StartGameButtonClicked()
+    {
+        GameManager.instance.gameState = GameManager.GameState.InGame;
+    }
+
+    public void RestartButtonClicked()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Add this line
+    }
+
+    public void ExitGameButtonClicked()
+    {
+        Application.Quit(); // Add this line
     }
 
 }
