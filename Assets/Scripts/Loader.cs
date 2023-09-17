@@ -27,4 +27,24 @@ public class Loader : MonoBehaviour
             yield return null;
         }
     }
+
+    public void LevelLoader(int levelIndex = 999, string levelName = "Tartaros") //Loads desired Level. Optional arguments: int levelIndex ; string levelName
+    {
+        try
+        {
+            if (levelIndex != 999)
+            {
+                Debug.Log("Vamos bien");
+                SceneManager.LoadScene(sceneBuildIndex: levelIndex);
+
+            }
+            else if (levelName != "Tartaros")
+            {
+                Debug.Log("nos vamos pa: " + levelName);
+                SceneManager.LoadScene(sceneName: levelName);
+            }
+        }
+        catch { }
+        finally { }
+    }
 }

@@ -23,9 +23,9 @@ public class SucessLevel : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Unit")){
+        if (other.gameObject.CompareTag("Player")){
             currentScene =  SceneManager.GetActiveScene();
             index = currentScene.buildIndex;
 
@@ -35,7 +35,7 @@ public class SucessLevel : MonoBehaviour
             }
             else
             {
-                GameManager.instance.GetComponent<Loader>().SubirNivel();
+                GameManager.instance.GetComponent<Loader>().LevelLoader(levelIndex: (index+1)); //Loads desired Level. Optional arguments: int levelIndex ; string levelName
             }
         }
     }
