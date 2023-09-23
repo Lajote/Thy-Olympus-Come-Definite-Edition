@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,7 @@ public class DamagePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
    
@@ -24,4 +25,5 @@ public class DamagePlayer : MonoBehaviour
             PlayerHealthController.instance.DealDamage();
         }
     }
+
 }

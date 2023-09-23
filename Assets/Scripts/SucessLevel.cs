@@ -10,7 +10,7 @@ public class SucessLevel : MonoBehaviour
 {
     [Serializable]
     public class SucessLevelClass : UnityEvent {}
-
+    bool winning = false;
 
     [FormerlySerializedAs("LastLevel")]
     [SerializeField]
@@ -18,25 +18,41 @@ public class SucessLevel : MonoBehaviour
     
     public int index;
     Scene currentScene;
-    private void Update()
+
+    public CharacterController CC;
+    public int ether;
+    void Start()
     {
         
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Update()
     {
-        if (other.gameObject.CompareTag("Player")){
-            currentScene =  SceneManager.GetActiveScene();
+        ether = CC.collected;
+        if (Input.GetKeyDown(KeyCode.Q)&&winning)
+        {
+            currentScene = SceneManager.GetActiveScene();
             index = currentScene.buildIndex;
 
-            if(index == 3)
+            if (index == 3)
             {
                 sucessLevel.Invoke();
             }
             else
             {
-                GameManager.instance.GetComponent<Loader>().LevelLoader(levelIndex: (index+1)); //Loads desired Level. Optional arguments: int levelIndex ; string levelName
+                // sucessLevel.Invoke();
+                GameManager.instance.GetComponent<Loader>().LevelLoader(levelIndex: (index + 1)); //Loads desired Level. Optional arguments: int levelIndex ; string levelName
             }
         }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if ((other.gameObject.CompareTag("Player")&&(ether>=2)))
+        {   //
+            winning = true;
+        }
+
+
     }
 }

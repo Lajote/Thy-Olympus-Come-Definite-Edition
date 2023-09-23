@@ -19,6 +19,7 @@ public class EnemyController : MonoBehaviour
     public float moveTime, waitTime;
     private float moveCount, waitCount;
 
+    
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
