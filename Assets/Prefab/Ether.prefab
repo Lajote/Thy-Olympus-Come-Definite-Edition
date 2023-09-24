@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5283252163380903147}
   - component: {fileID: 5283252163380903151}
   m_Layer: 0
-  m_Name: Gem
+  m_Name: Ether
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
