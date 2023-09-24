@@ -211,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 9189600838016149429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.51, y: -1.996, z: 0.52153176}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.9667993, y: 3.9667993, z: 3.9667993}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9189600838409091704}
@@ -429,6 +429,8 @@ MonoBehaviour:
   normalJump: 0
   boostedJump: 0
   SRKairos: {fileID: 6209918204402526300}
+  alphaChangeSpeedON: 10
+  alphaChangeSpeedOFF: 6
 --- !u!114 &9189600838016149455
 MonoBehaviour:
   m_ObjectHideFlags: 0
