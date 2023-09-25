@@ -10,9 +10,9 @@ public class AudioManager : MonoBehaviour
     public AudioSource bgm, levelClearMusic;
  
     
-    void Start()
+    void Awake()
     {
-
+        audioManager = this;
     }
 
     // Update is called once per frame
