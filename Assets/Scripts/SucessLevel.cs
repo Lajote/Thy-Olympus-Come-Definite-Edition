@@ -88,6 +88,8 @@ public class SucessLevel : MonoBehaviour
     private void WIN()
     {
         GameManager.instance.GetComponent<Loader>().LevelLoader(levelIndex: (index + 1));
+        GameManager.instance.collected = 0;
+
         
     }
 }
