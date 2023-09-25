@@ -9,20 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource[] soundEffects;
     public AudioSource bgm, levelClearMusic;
  
-    private void Awake()
-    {
-        if (audioManager == null)
-
-        {
-            audioManager = this;
-        }
-
-        else
-        {
-            Destroy(gameObject);
-        }
-        DontDestroyOnLoad(this);
-    }
+    
     void Start()
     {
 
