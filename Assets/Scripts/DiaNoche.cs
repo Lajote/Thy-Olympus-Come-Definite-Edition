@@ -12,6 +12,8 @@ public class DiaNoche : MonoBehaviour
     public float changeInput;
     
     bool changeTime = false;
+
+    public float transitionSpeed = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +32,10 @@ public class DiaNoche : MonoBehaviour
         }
         if (changeTime)
         {
-            var rotationVector = transform.rotation.eulerAngles;
-            rotationVector.z = 180;
-            cielo.transform.rotation = Quaternion.Euler(rotationVector);
+            float targetRotation = 180f;
+            float currentRotation = cielo.transform.rotation.eulerAngles.z;
+            float newRotation = Mathf.Lerp(currentRotation, targetRotation, transitionSpeed * Time.deltaTime);
+            cielo.transform.rotation = Quaternion.Euler(cielo.transform.rotation.eulerAngles.x, cielo.transform.rotation.eulerAngles.y, newRotation);
         }
 
     }

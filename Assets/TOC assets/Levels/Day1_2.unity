@@ -470,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044917940263676512, guid: f784024c471a61e4180dbaed0379710c, type: 3}
       propertyPath: maxEther
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1044917940263676513, guid: f784024c471a61e4180dbaed0379710c, type: 3}
       propertyPath: heart1
