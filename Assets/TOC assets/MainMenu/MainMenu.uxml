@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/StyleSheet.uss?fileID=7433441132597879392&amp;guid=52dabf0593653e64ba5f762681acbca0&amp;type=3#StyleSheet" />
+    <ui:VisualElement name="contenedor" style="height: 1074px; width: 1917px;">
+        <ui:VisualElement name="derecha" style="position: absolute; width: 1434px; height: 1080px; left: 476px;">
+            <ui:VisualElement name="LogoImage" style="height: 1082px; width: 1442px; background-image: url(&apos;project://database/Assets/TOC%20assets/MainMenu/MainMenuArt.png?fileID=2800000&amp;guid=33c0b9fa38051104eac246cb8bcec1f6&amp;type=3#MainMenuArt&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="izquierda" style="height: 1078px; width: 477px; background-color: rgb(0, 4, 84);">
+            <ui:Button text="Play" display-tooltip-when-elided="true" name="Play" class="button" style="height: 62px; width: 444px; position: absolute; top: 500px; left: 12px; background-image: url(&apos;project://database/Assets/TOC%20assets/MainMenu/BotonMenu.png?fileID=2800000&amp;guid=b5df8e780c834ed469b2b0afb7991143&amp;type=3#BotonMenu&apos;); font-size: 55px; -unity-font-style: normal;" />
+            <ui:Button text="Load" display-tooltip-when-elided="true" name="Load" class="button" style="height: 62px; width: 444px; position: absolute; top: 598px; left: 12px; background-image: url(&apos;project://database/Assets/TOC%20assets/MainMenu/BotonMenu.png?fileID=2800000&amp;guid=b5df8e780c834ed469b2b0afb7991143&amp;type=3#BotonMenu&apos;); font-size: 55px; -unity-font-style: normal;" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" style="height: 62px; width: 444px; position: absolute; top: 698px; left: 10px; background-image: url(&apos;project://database/Assets/TOC%20assets/MainMenu/BotonMenu.png?fileID=2800000&amp;guid=b5df8e780c834ed469b2b0afb7991143&amp;type=3#BotonMenu&apos;); font-size: 55px; -unity-font-style: normal;" />
+            <ui:Label text="Thy Olympus Come" display-tooltip-when-elided="true" style="height: 161px; width: 468px; position: absolute; top: 163px; left: 6px; -unity-text-align: middle-center; font-size: 48px; -unity-text-outline-color: rgb(255, 255, 255); color: rgb(255, 255, 255); -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=d957fd9a72b066c409c97b8e1e8b5c12&amp;type=3#NotInter-Regular&apos;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
