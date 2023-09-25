@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2552264864058103276, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: timer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5344293824909776911, guid: f784024c471a61e4180dbaed0379710c, type: 3}
     - target: {fileID: 3217217361016570716, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: deadEffect
       value: 
@@ -155,7 +155,8 @@ PrefabInstance:
       propertyPath: knockBackLength
       value: 0.25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3217217361016570716, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
 --- !u!1 &7772826351361513683 stripped
 GameObject:

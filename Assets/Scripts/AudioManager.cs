@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance;
+    public static AudioManager audioManager;
     public GameObject Player;
     public AudioSource[] soundEffects;
     public AudioSource bgm, levelClearMusic;
  
     private void Awake()
     {
-        if (instance == null)
+        if (audioManager == null)
+
         {
-            instance = this;
+            audioManager = this;
         }
 
         else

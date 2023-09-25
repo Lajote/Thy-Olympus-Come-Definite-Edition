@@ -46,17 +46,17 @@ public class PlayerHealthController : MonoBehaviour
         if(invincibleCounter <= 0)
         {
             currentHealth--;
-            PlayerMovement.instance.animator.SetTrigger("Hurt");
-            AudioManager.instance.PlaySXF(7);
+            UiManager.uiManager.UpdateHealthDisplay();
+
+            AudioManager.audioManager.PlaySXF(7);
 
             if(currentHealth <= 0)
             {
                 currentHealth =0;
-
                 Instantiate(DeadEffect, PlayerMovement.instance.transform.position, PlayerMovement.instance.transform.rotation);
-                AudioManager.instance.PlaySXF(4);
+                AudioManager.audioManager.PlaySXF(4);
                 gameObject.SetActive(false);
-                AudioManager.instance.BgmStop();
+                AudioManager.audioManager.BgmStop();
                 GameOver.show();
             }
             else
@@ -66,17 +66,17 @@ public class PlayerHealthController : MonoBehaviour
                 
                // PlayerMovement.instance.Knockback();
             }
-            UiController.instance.UpdateHealthDisplay();
+            UiManager.uiManager.UpdateHealthDisplay();
         }
         
     }
 
     public void Dead()
     {
-        PlayerMovement.instance.animator.SetTrigger("Hurt");
+        
         Instantiate(DeadEffect, PlayerMovement.instance.transform.position, PlayerMovement.instance.transform.rotation);
         gameObject.SetActive(false);
-        AudioManager.instance.BgmStop();
+        AudioManager.audioManager.BgmStop();
         GameOver.show();
     }
 

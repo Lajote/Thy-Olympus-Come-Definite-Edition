@@ -1,10 +1,3 @@
-// este Script, si bien no lo hice de 0 para este juego, es un script de un tutorial que use en un proyecto de prueba anterior,
-// cuando apenas estaba comenzando a aprender unity, si bien en un inicio fue descargado, lo he modificado en todo este tiempo al punto de que no queda casi nada del original
-// dicho esto de todas formas hago la aclaracion ya que en el formato decia que el codigo debia ser propio, y este Script al haber sido tan modificado ya lo siento como propio.
-// espero no estar incumpliendo ninguna norma y de ser asi por favor comunicarse para cambiar el Script por uno completamente nuevo, 
-// ya que lo use simplemente para ahorrar tiempo a travez del trabajo ya hecho anteriormente por mi persona.
-
-
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -152,7 +145,7 @@ if (m_Grounded)
 			
 			m_Grounded = true;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-			AudioManager.instance.PlaySXF(8);
+            AudioManager.audioManager.PlaySXF(8);
 		}
 		else if (m_DoubleJump && jump)
 		{
@@ -160,7 +153,7 @@ if (m_Grounded)
 			animator.SetBool("Jumping", false);
 			animator.SetBool("DoubleJumping", true);
 			m_DoubleJump = false;
-			AudioManager.instance.PlaySXF(8);
+			AudioManager.audioManager.PlaySXF(8);
 		}
 	}
 

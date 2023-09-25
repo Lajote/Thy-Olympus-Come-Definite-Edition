@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class UiManager : MonoBehaviour
 {
-    public static UiManager instance;
+    public static UiManager uiManager;
 
-    public Image heart1, heart2, heart3;
+    public float EtherPersent;
 
     public Slider Ether;
 
@@ -16,11 +16,11 @@ public class UiManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        uiManager = this;
     }
     void Start()
     {
-        UpdateGemCount();
+        UpdateEtherCount();
     }
 
     void Update()
@@ -30,15 +30,15 @@ public class UiManager : MonoBehaviour
     
     public void UpdateHealthDisplay()
     {
-        switch (PlayerHealthController.instance.currentHealth)
-        {
-            
-        }
+        Health.value = PlayerHealthController.instance.currentHealth;
+       
     }
 
-    public void UpdateGemCount()
+    public void UpdateEtherCount()
     {
-        Ether.value = CharacterController.instance.collected;
+        EtherPersent= (float)GameManager.instance.collected / (float)GameManager.instance.maxEther;
+        Debug.Log(EtherPersent);
+        Ether.value = EtherPersent;
     }
 
     public void PauseButtonClicked()

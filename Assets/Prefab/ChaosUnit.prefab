@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotted: 0
+  ether: 0
 --- !u!1 &1011847781672621387
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotted: 0
+  ether: 0
 --- !u!1 &5029872560040844479
 GameObject:
   m_ObjectHideFlags: 0

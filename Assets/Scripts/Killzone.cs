@@ -10,7 +10,7 @@ public class Killzone : MonoBehaviour
         if(other.tag == "Player")
         {
             PlayerHealthController.instance.Dead();
-            AudioManager.instance.PlaySXF(5);
+            AudioManager.audioManager.PlaySXF(5);
         }
     }
 

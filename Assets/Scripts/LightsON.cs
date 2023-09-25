@@ -19,22 +19,16 @@ public class LightsON : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lightsOn();
+        
         if (POWER)
         {
             darkness.color = new Color(darkness.color.r, darkness.color.g, darkness.color.b, Mathf.Lerp(darkness.color.a, targetAlpha, alphaChangeSpeedON * Time.deltaTime));
         }
     }
 
-    void lightsOn()
+    public void lightsOn()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
             POWER = true;
-            
-        }
-
-
         
     }
 

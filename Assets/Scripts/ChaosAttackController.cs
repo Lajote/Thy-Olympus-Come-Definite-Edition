@@ -25,6 +25,7 @@ public class ChaosAttackController : MonoBehaviour
             animatorRight.SetBool("Attacking", true);
             //PlayerHealthController.instance.DealDamage();
 
+
         }
         else { animatorRight.SetBool("Attacking", false); }
         
