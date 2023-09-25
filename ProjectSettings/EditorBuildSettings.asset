@@ -6,21 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TOC assets/Levels/test ToC.unity
-    guid: d5c76c58a3cb63746ac20a7425586386
+    path: Assets/TOC assets/Levels/MainMenu.unity
+    guid: b32e422ecd2e80d4d9e1bdd836088331
   - enabled: 1
     path: Assets/TOC assets/Levels/Day1_1.unity
     guid: 2383bc8134a8a9843b0a6a10d2d00911
   - enabled: 1
     path: Assets/TOC assets/Levels/Day1_2.unity
-    guid: fc4736269d1727c4895283fa10e06792
-  - enabled: 1
-    path: Assets/TOC assets/Levels/Day1_3.unity
-    guid: 3882862923bac564dae8bf583f368253
+    guid: 7f265776ca3394c47932063768720475
   - enabled: 1
     path: Assets/TOC assets/Levels/Day2_1.unity
-    guid: 1c870e81495bc84419f4032f3c8cbe98
-  - enabled: 1
-    path: Assets/Scenes/test.unity
-    guid: b52220e7f62c6a040abcb4dbcee2df7a
+    guid: f42af412bc1fa40b2836183cdb6b700d
   m_configObjects: {}
