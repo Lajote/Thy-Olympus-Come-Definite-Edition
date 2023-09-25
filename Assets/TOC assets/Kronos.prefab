@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2552264864058103276, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: timer
       value: 
-      objectReference: {fileID: 5344293824909776911, guid: f784024c471a61e4180dbaed0379710c, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3217217361016570716, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: deadEffect
       value: 
@@ -89,11 +89,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9189600838016149448, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 67.51
+      value: -35.3
       objectReference: {fileID: 0}
     - target: {fileID: 9189600838016149448, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.27
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 9189600838016149448, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: m_LocalPosition.z

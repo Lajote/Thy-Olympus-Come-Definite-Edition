@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class UiManager : MonoBehaviour
 {
@@ -36,9 +37,17 @@ public class UiManager : MonoBehaviour
 
     public void UpdateEtherCount()
     {
-        EtherPersent= (float)GameManager.instance.collected / (float)GameManager.instance.maxEther;
-        Debug.Log(EtherPersent);
-        Ether.value = EtherPersent;
+        try
+        {
+            EtherPersent = (float)GameManager.instance.collected / (float)GameManager.instance.maxEther;
+            Debug.Log(EtherPersent);
+            Ether.value = EtherPersent;
+        }
+        catch (Exception) 
+        { 
+            
+        }
+
     }
 
     public void PauseButtonClicked()

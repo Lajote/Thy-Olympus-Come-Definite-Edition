@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 public class Timer : MonoBehaviour
 {
 
@@ -24,15 +25,23 @@ public class Timer : MonoBehaviour
         UpdateTimerText();
     }
 
-    void UpdateTimerText()
+    void UpdateTimerText() 
     {
-        minutes = Mathf.FloorToInt(currentTime / 60f);
-        seconds = Mathf.FloorToInt(currentTime % 60f);
+        try
+        {
+            minutes = Mathf.FloorToInt(currentTime / 60f);
+            seconds = Mathf.FloorToInt(currentTime % 60f);
 
-        string timerString = string.Format("{0:00}:{1:00}", minutes, seconds);
+            string timerString = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        // Update the Text component with the formatted time
-        timerText.text = timerString;
+            // Update the Text component with the formatted time
+            timerText.text = timerString;
+        }
+        catch (Exception)
+        {
+
+        }
+
     }
 
 

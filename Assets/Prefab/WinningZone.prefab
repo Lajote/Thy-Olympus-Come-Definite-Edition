@@ -1593,11 +1593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5283252163380903150, guid: c84172e387c8db8418aa9f45a3301dcd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.384242
+      value: 314.7
       objectReference: {fileID: 0}
     - target: {fileID: 5283252163380903150, guid: c84172e387c8db8418aa9f45a3301dcd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.93047
+      value: 67.7
       objectReference: {fileID: 0}
     - target: {fileID: 5283252163380903150, guid: c84172e387c8db8418aa9f45a3301dcd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1631,7 +1631,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5283252163380903151, guid: c84172e387c8db8418aa9f45a3301dcd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c84172e387c8db8418aa9f45a3301dcd, type: 3}
 --- !u!1 &7782996852330891133 stripped
 GameObject:
@@ -1650,6 +1651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a498b249538c3ab468b339f56d0cb38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  darkness: {fileID: 0}
   sucessLevel:
     m_PersistentCalls:
       m_Calls:
@@ -1666,5 +1668,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   index: 0
-  CC: {fileID: 7772826351361513638, guid: c27de4888ae798047b3b0aa8fef6f812, type: 3}
+  WinText: {fileID: 0}
+  alphaChangeSpeedON: 10
+  countDown: 6
   ether: 0
