@@ -9,6 +9,7 @@ public class Kairos : MonoBehaviour
     public float jumpkairos;
     public float normalJump;
     public float boostedJump;
+    public float boostFactor = 1.25f;
 
 
     public SpriteRenderer SRKairos;
@@ -21,7 +22,7 @@ public class Kairos : MonoBehaviour
     void Start()
     {
         normalJump = CC.m_JumpForce;
-        boostedJump = normalJump * 1.5f;
+        boostedJump = normalJump * boostFactor;
         targetAlpha = 0f; // Initialize the target alpha to 0.
 
 

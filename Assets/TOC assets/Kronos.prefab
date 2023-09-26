@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2552264864058103276, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
+      propertyPath: boostFactor
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3217217361016570716, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: deadEffect
       value: 
@@ -129,15 +133,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9189600838016149453, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: m_Radius
-      value: 0.29944894
+      value: 0.36753514
       objectReference: {fileID: 0}
     - target: {fileID: 9189600838016149453, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: m_Offset.x
-      value: -0.023148058
+      value: -0.028821921
       objectReference: {fileID: 0}
     - target: {fileID: 9189600838016149453, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: m_Offset.y
-      value: -0.50494885
+      value: -0.47090644
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189600838016149454, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6450139
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189600838016149454, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2707455
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189600838016149454, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.029920518
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189600838016149454, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.19004238
       objectReference: {fileID: 0}
     - target: {fileID: 9189600838016149455, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
       propertyPath: runSpeed
@@ -163,6 +183,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9189600838016149429, guid: e0b21f1f2a161c140945a2ed7fcf2a12, type: 3}
   m_PrefabInstance: {fileID: 1465540304607608678}
   m_PrefabAsset: {fileID: 0}
+--- !u!70 &1676244197516740991
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7772826351361513683}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.040346768, y: 0.028242161}
+  m_Size: {x: 0.41883308, y: 1.7340487}
+  m_Direction: 0
 --- !u!114 &1889310153
 MonoBehaviour:
   m_ObjectHideFlags: 0

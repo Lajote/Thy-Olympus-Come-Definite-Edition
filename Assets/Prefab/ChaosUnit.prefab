@@ -100,9 +100,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.28295112, y: -0.3543327}
+  m_Offset: {x: -0.036741257, y: -0.4742174}
   serializedVersion: 2
-  m_Radius: 1.5539243
+  m_Radius: 1.9935017
 --- !u!95 &3807409682380606598
 Animator:
   serializedVersion: 5
@@ -137,7 +137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotted: 0
-  ether: 0
+  atacked: 0
+  countDown: 0.2
+  passiveTime: 2
+  passiveOver: 0
 --- !u!1 &1011847781672621387
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,9 +241,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.181633, y: 0.033070564}
+  m_Offset: {x: -0.17021334, y: -0.18386376}
   serializedVersion: 2
-  m_Radius: 1.6830068
+  m_Radius: 1.9684469
 --- !u!95 &7862877219017787511
 Animator:
   serializedVersion: 5
@@ -275,7 +278,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotted: 0
-  ether: 0
+  atacked: 0
+  countDown: 0.2
+  passiveTime: 2
+  passiveOver: 0
 --- !u!1 &5029872560040844479
 GameObject:
   m_ObjectHideFlags: 0

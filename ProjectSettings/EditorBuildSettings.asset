@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/TOC assets/Levels/Day1_1.unity
     guid: 2383bc8134a8a9843b0a6a10d2d00911
   - enabled: 1
-    path: Assets/TOC assets/Levels/Day1_2.unity
-    guid: 7f265776ca3394c47932063768720475
-  - enabled: 1
     path: Assets/TOC assets/Levels/Day2_1.unity
     guid: f42af412bc1fa40b2836183cdb6b700d
+  - enabled: 1
+    path: Assets/TOC assets/Levels/Credits.unity
+    guid: f7573eb967ae1bb4eb4532266da74fa6
   m_configObjects: {}

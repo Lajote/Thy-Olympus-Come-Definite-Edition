@@ -17,8 +17,21 @@ public class MainMenu : MonoBehaviour
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
         Button buttonPlay = root.Q<Button>("Play");
+        Button buttonQuit = root.Q<Button>("Quit");
 
+        buttonPlay.clicked += StartGame;
+        buttonQuit.clicked += QuitGame;
+    }
 
-        buttonPlay.clicked += () => GameManager.instance.GetComponent<Loader>().LevelLoader(levelName: "Day1_1");
+    // Function to start the game (you can customize this)
+    private void StartGame()
+    {
+        GameManager.instance.GetComponent<Loader>().LevelLoader(levelName: "Day1_1");
+    }
+
+    // Function to quit the application
+    private void QuitGame()
+    {
+        Application.Quit();
     }
 }
